@@ -1,0 +1,366 @@
+:root {
+  --bg: #0b0f19;
+  --panel: #0f172a;
+  --panel-soft: rgba(15, 23, 42, 0.6);
+  --border: #1e293b;
+  --border-soft: rgba(30, 41, 59, 0.6);
+  --text: #f1f5f9;
+  --muted: #94a3b8;
+  --indigo: #6366f1;
+  --fuchsia: #d946ef;
+  --pink: #ec4899;
+  --emerald: #10b981;
+  --amber: #f59e0b;
+  --cyan: #22d3ee;
+  --radius-lg: 1.5rem;
+  --radius-md: 1rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  min-height: 100vh;
+}
+
+.text-muted-soft {
+  color: var(--muted) !important;
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, #818cf8, #d946ef, #f472b6);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.glow-decoration {
+  position: fixed;
+  width: 24rem;
+  height: 24rem;
+  border-radius: 50%;
+  filter: blur(90px);
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.15;
+}
+
+.glow-indigo {
+  top: 0;
+  left: 15%;
+  background: var(--indigo);
+}
+
+.glow-pink {
+  bottom: 5%;
+  right: 15%;
+  background: var(--fuchsia);
+}
+
+/* ---------- Navbar ---------- */
+.app-navbar {
+  background: rgba(15, 23, 42, 0.85);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 40;
+}
+
+.brand-icon {
+  background: var(--indigo);
+  border-radius: 0.75rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 20px rgba(99, 102, 241, 0.35);
+}
+
+.icon-btn {
+  background: rgba(30, 41, 59, 0.8);
+  border: 1px solid var(--border-soft);
+  color: var(--muted);
+  border-radius: 0.75rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.15s ease;
+}
+
+.icon-btn:hover {
+  background: rgba(51, 65, 85, 0.9);
+  color: var(--text);
+}
+
+/* ---------- Panels / Cards ---------- */
+.panel {
+  background: var(--panel-soft);
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius-lg);
+}
+
+.category-card {
+  background: linear-gradient(to bottom, rgba(30, 41, 59, 0.6), rgba(15, 23, 42, 0.8));
+  border: 2px solid var(--border-soft);
+  border-radius: var(--radius-lg);
+  padding: 1.25rem;
+  cursor: pointer;
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+}
+
+.category-card:hover {
+  transform: translateY(-4px);
+  border-color: #334155;
+}
+
+.category-card.active {
+  border-color: var(--indigo);
+  background: rgba(49, 46, 129, 0.15);
+  box-shadow: 0 10px 30px rgba(99, 102, 241, 0.15);
+}
+
+.category-icon {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.85rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.4rem;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.35);
+}
+
+.difficulty-btn {
+  background: rgba(30, 41, 59, 0.5);
+  border: 1px solid var(--border-soft);
+  color: var(--text);
+  border-radius: 0.85rem;
+  padding: 0.75rem;
+  font-weight: 700;
+  transition: all 0.15s ease;
+}
+
+.difficulty-btn.active {
+  background: rgba(99, 102, 241, 0.2);
+  border-color: var(--indigo);
+  color: #a5b4fc;
+}
+
+.btn-gradient {
+  background: linear-gradient(90deg, var(--indigo), var(--fuchsia));
+  border: none;
+  color: white;
+  font-weight: 700;
+  transition: transform 0.15s ease, opacity 0.15s ease;
+}
+
+.btn-gradient:hover {
+  transform: scale(1.02);
+  opacity: 0.92;
+  color: white;
+}
+
+.btn-gradient-success {
+  background: linear-gradient(90deg, var(--emerald), #14b8a6);
+  border: none;
+  color: white;
+  font-weight: 700;
+}
+
+.btn-gradient-success:hover {
+  color: white;
+  transform: scale(1.02);
+}
+
+/* ---------- Game screen ---------- */
+.stat-pill {
+  background: rgba(15, 23, 42, 0.8);
+  border: 1px solid var(--border-soft);
+  border-radius: 0.85rem;
+  padding: 0.5rem 1rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.board-frame {
+  background: rgba(15, 23, 42, 0.9);
+  border: 2px solid var(--border);
+  border-radius: 1.75rem;
+  padding: 0.75rem;
+  position: relative;
+  width: 100%;
+  max-width: 460px;
+  aspect-ratio: 1 / 1;
+}
+
+.board-hint-layer {
+  position: absolute;
+  inset: 0.75rem;
+  border-radius: 1.25rem;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.22;
+  pointer-events: none;
+}
+
+.board-grid {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  gap: 3px;
+  position: relative;
+  z-index: 1;
+}
+
+.board-slot {
+  position: relative;
+  border-radius: 0.5rem;
+  border: 1px solid var(--border);
+  overflow: hidden;
+  cursor: pointer;
+  background: rgba(2, 6, 23, 0.6);
+  transition: background-color 0.15s ease, border-color 0.15s ease;
+}
+
+.board-slot.filled {
+  border-color: transparent;
+  cursor: default;
+}
+
+.board-slot.selectable {
+  border-color: rgba(99, 102, 241, 0.5);
+  background: rgba(99, 102, 241, 0.08);
+}
+
+.board-slot-image {
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+
+.pool-panel {
+  background: rgba(15, 23, 42, 0.4);
+  border: 1px solid var(--border-soft);
+  border-radius: 1.5rem;
+  padding: 1.25rem;
+}
+
+.pool-tray {
+  background: rgba(2, 6, 23, 0.6);
+  border: 1px solid var(--border);
+  border-radius: 1.25rem;
+  padding: 1rem;
+  min-height: 180px;
+  max-height: 420px;
+  overflow-y: auto;
+}
+
+.puzzle-piece {
+  aspect-ratio: 1 / 1;
+  border-radius: 0.75rem;
+  border: 2px solid var(--border);
+  cursor: grab;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  transition: transform 0.15s ease, border-color 0.15s ease;
+}
+
+.puzzle-piece:hover {
+  transform: scale(1.05);
+}
+
+.puzzle-piece.selected {
+  border-color: var(--fuchsia);
+  box-shadow: 0 0 0 4px rgba(217, 70, 239, 0.2);
+}
+
+.puzzle-piece.dragging {
+  opacity: 0.4;
+}
+
+/* ---------- Win Modal ---------- */
+.modal-backdrop-custom {
+  position: fixed;
+  inset: 0;
+  background: rgba(7, 11, 19, 0.8);
+  backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1050;
+  padding: 1rem;
+}
+
+.win-card {
+  background: var(--panel);
+  border: 1px solid rgba(16, 185, 129, 0.3);
+  border-radius: 1.75rem;
+  max-width: 380px;
+  width: 100%;
+  padding: 1.75rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.win-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--emerald), #14b8a6, var(--indigo));
+}
+
+/* ---------- Misc ---------- */
+.leaderboard-row {
+  background: rgba(15, 23, 42, 0.5);
+  border: 1px solid var(--border-soft);
+  border-radius: 0.6rem;
+  padding: 0.4rem 0.75rem;
+  font-size: 0.75rem;
+}
+
+.spinner-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(2, 6, 23, 0.7);
+  border-radius: 1.25rem;
+  z-index: 2;
+}
+
+.badge-soft {
+  background: rgba(99, 102, 241, 0.12);
+  color: #a5b4fc;
+  border: 1px solid rgba(99, 102, 241, 0.25);
+  border-radius: 999px;
+  font-weight: 600;
+}
+
+.visually-hidden-focusable-note {
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+
+@media (max-width: 991px) {
+  .glow-decoration {
+    display: none;
+  }
+}
