@@ -22,7 +22,7 @@ export default function Navbar({ screen, muted, onToggleMute, onExit }) {
         <div className="d-flex align-items-center gap-2">
           <button
             type="button"
-            className="icon-btn"
+            className={`icon-btn ${!muted ? 'icon-btn-sound-on' : ''}`}
             onClick={onToggleMute}
             title={muted ? 'Unmute sounds' : 'Mute sounds'}
             aria-label={muted ? 'Unmute sounds' : 'Mute sounds'}

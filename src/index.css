@@ -100,6 +100,15 @@ body {
   color: var(--text);
 }
 
+.icon-btn-sound-on {
+  color: var(--emerald);
+  border-color: rgba(16, 185, 129, 0.4);
+}
+
+.icon-btn-sound-on:hover {
+  color: var(--emerald);
+}
+
 /* ---------- Panels / Cards ---------- */
 .panel {
   background: var(--panel-soft);

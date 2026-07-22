@@ -23,8 +23,14 @@ export default function CategoryCard({ category, active, onSelect }) {
       </div>
       <h5 className="fw-bold text-white mb-1">{category.title}</h5>
       <p className="text-muted-soft small mb-2">{category.description}</p>
-      <div className="d-flex align-items-center gap-1 small fw-bold" style={{ color: category.accent }}>
-        Play now <i className="bi bi-play-fill" />
+      <div className="d-flex align-items-center gap-1 small fw-bold" style={{ color: active ? category.accent : undefined }}>
+        {active ? (
+          <>
+            <i className="bi bi-check-circle-fill" /> Selected
+          </>
+        ) : (
+          <span className="text-muted-soft fw-normal">Tap to select</span>
+        )}
       </div>
     </div>
   );

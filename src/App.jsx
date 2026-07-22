@@ -145,6 +145,7 @@ export default function App() {
 
   const goHome = () => {
     playSound('click', muted);
+    setIsWon(false);
     setScreen('home');
   };
 
