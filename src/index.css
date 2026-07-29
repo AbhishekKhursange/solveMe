@@ -100,6 +100,12 @@ body {
   color: var(--text);
 }
 
+.icon-btn-wide {
+  width: auto;
+  height: auto;
+  padding: 0.5rem 1rem;
+}
+
 .icon-btn-sound-on {
   color: var(--emerald);
   border-color: rgba(16, 185, 129, 0.4);

@@ -60,10 +60,10 @@ export default function GameScreen({
         </div>
 
         <div className="d-flex gap-5 flex-shrink-0">
-          <button type="button" className="btn icon-btn px-3 text-nowrap" onClick={onToggleHint}>
+          <button type="button" className="btn icon-btn icon-btn-wide text-nowrap" onClick={onToggleHint}>
             <i className="bi bi-eye me-1" /> {showHint ? 'Hide hint' : 'Show hint'}
           </button>
-          <button type="button" className="btn icon-btn px-3 text-nowrap" onClick={onRestart}>
+          <button type="button" className="btn icon-btn icon-btn-wide text-nowrap" onClick={onRestart}>
             <i className="bi bi-arrow-clockwise me-1" /> Restart
           </button>
         </div>

@@ -30,7 +30,7 @@ export default function Navbar({ screen, muted, onToggleMute, onExit }) {
             <i className={`bi ${muted ? 'bi-volume-mute' : 'bi-volume-up'}`} />
           </button>
           {screen === 'game' && (
-            <button type="button" className="btn btn-sm icon-btn px-3" onClick={onExit}>
+            <button type="button" className="btn btn-sm icon-btn icon-btn-wide text-nowrap" onClick={onExit}>
               <i className="bi bi-arrow-left me-1" /> Exit
             </button>
           )}
