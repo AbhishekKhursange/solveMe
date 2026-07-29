@@ -71,6 +71,48 @@ export const CATEGORIES = {
       { name: 'Australia', url: 'https://flagcdn.com/w640/au.png' },
     ],
   },
+  oceanLife: {
+    key: 'oceanLife',
+    title: 'Ocean Life',
+    description: 'Creatures beneath the waves.',
+    icon: 'bi-water',
+    accent: '#0ea5e9', // sky blue
+    accentTo: '#0369a1',
+    items: [
+      { name: 'Dolphins', url: '/images/ocean-life/dolphins.jpg' },
+      { name: 'Sea Turtle', url: '/images/ocean-life/sea-turtle.jpg' },
+      { name: 'Clownfish', url: '/images/ocean-life/clownfish.jpg' },
+      { name: 'Coral Reef', url: '/images/ocean-life/coral-reef.jpg' },
+    ],
+  },
+  bugsBlooms: {
+    key: 'bugsBlooms',
+    title: 'Bugs & Blooms',
+    description: 'Insects and flowers, up close.',
+    icon: 'bi-flower1',
+    accent: '#84cc16', // lime
+    accentTo: '#4d7c0f',
+    items: [
+      { name: 'Monarch Butterfly', url: '/images/bugs-blooms/monarch-butterfly.jpg' },
+      { name: 'Honeybee', url: '/images/bugs-blooms/honeybee.jpg' },
+      { name: 'Ladybug', url: '/images/bugs-blooms/ladybug.jpg' },
+      { name: 'Sunflower', url: '/images/bugs-blooms/sunflower.jpg' },
+    ],
+  },
+  naturalWonders: {
+    key: 'naturalWonders',
+    title: 'Natural Wonders',
+    description: 'Scenery shaped by nature, not people.',
+    icon: 'bi-mountain',
+    accent: '#f97316', // orange
+    accentTo: '#b45309',
+    items: [
+      { name: 'Grand Canyon', url: '/images/natural-wonders/grand-canyon.jpg' },
+      { name: 'Niagara Falls', url: '/images/natural-wonders/niagara-falls.jpg' },
+      { name: 'Northern Lights', url: '/images/natural-wonders/northern-lights.jpg' },
+      { name: 'Sahara Desert', url: '/images/natural-wonders/sahara-desert.jpg' },
+    ],
+  },
 };
 
 export const CATEGORY_LIST = Object.values(CATEGORIES);
