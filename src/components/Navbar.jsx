@@ -14,7 +14,7 @@ export default function Navbar({ screen, muted, onToggleMute, onExit }) {
             <i className="bi bi-stars text-white" />
           </div>
           <div>
-            <span className="fw-bold fs-5 gradient-text">SnapPuzzle</span>
+            <span className="fw-bold fs-5 gradient-text">SolveMe</span>
             <span className="badge badge-soft ms-2 d-none d-sm-inline-block">v1.0</span>
           </div>
         </div>

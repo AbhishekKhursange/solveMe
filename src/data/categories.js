@@ -19,10 +19,12 @@ export const CATEGORIES = {
     accent: '#f59e0b', // amber
     accentTo: '#ea580c',
     items: [
-      { name: 'Majestic Lion', url: 'https://images.unsplash.com/photo-1614027164847-1b28cfe1df60?w=800&auto=format&fit=crop' },
-      { name: 'African Elephant', url: 'https://images.unsplash.com/photo-1557050543-4d5f4e07ef46?w=800&auto=format&fit=crop' },
+      { name: 'Lion', url: '/images/wild-kingdom/Lion.webp' },
+      { name: 'Elephant', url: '/images/wild-kingdom/Elephant.webp' },
       { name: 'Giant Panda', url: 'https://images.unsplash.com/photo-1564349683136-77e08dba1ef9?w=800&auto=format&fit=crop' },
       { name: 'Red Fox', url: 'https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?w=800&auto=format&fit=crop' },
+      { name: 'Tiger', url: '/images/wild-kingdom/Tiger.webp' },
+      { name: 'Kangaroo', url: '/images/wild-kingdom/Kangaroo.webp' },
     ],
   },
   globalWonders: {
@@ -51,6 +53,7 @@ export const CATEGORIES = {
       { name: 'Crisp Apples', url: 'https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6?w=800&auto=format&fit=crop' },
       { name: 'Juicy Oranges', url: 'https://images.unsplash.com/photo-1611080626919-7cf5a9dbab5b?w=800&auto=format&fit=crop' },
       { name: 'Garden Avocado', url: 'https://images.unsplash.com/photo-1523049673857-eb18f1d7b578?w=800&auto=format&fit=crop' },
+      { name: 'Sunflower', url: '/images/fruits-greens/Sunflower.webp' },
     ],
   },
   countries: {
@@ -63,12 +66,12 @@ export const CATEGORIES = {
     // flagcdn.com serves stable, predictable, free-to-use flag images —
     // no API key, no rate limiting for this scale, safe for production.
     items: [
-      { name: 'India', url: 'https://flagcdn.com/w640/in.png' },
+      { name: 'India', url: '/images/countries/India.webp' },
       { name: 'United States', url: 'https://flagcdn.com/w640/us.png' },
-      { name: 'Japan', url: 'https://flagcdn.com/w640/jp.png' },
-      { name: 'Brazil', url: 'https://flagcdn.com/w640/br.png' },
-      { name: 'France', url: 'https://flagcdn.com/w640/fr.png' },
-      { name: 'Australia', url: 'https://flagcdn.com/w640/au.png' },
+      { name: 'Japan', url: '/images/countries/Japan.webp' },
+      { name: 'Brazil', url: '/images/countries/Brazil.webp' },
+      { name: 'France', url: '/images/countries/France.webp' },
+      { name: 'Australia', url: '/images/countries/Australia.webp' },
     ],
   },
   oceanLife: {
@@ -79,10 +82,11 @@ export const CATEGORIES = {
     accent: '#0ea5e9', // sky blue
     accentTo: '#0369a1',
     items: [
-      { name: 'Dolphins', url: '/images/ocean-life/dolphins.jpg' },
-      { name: 'Sea Turtle', url: '/images/ocean-life/sea-turtle.jpg' },
+      { name: 'Dolphins', url: '/images/ocean-life/Dolphin.webp' },
+      { name: 'Sea Turtle', url: '/images/ocean-life/Turtle.webp' },
       { name: 'Clownfish', url: '/images/ocean-life/clownfish.jpg' },
       { name: 'Coral Reef', url: '/images/ocean-life/coral-reef.jpg' },
+      { name: 'Coral Reef', url: '/images/ocean-life/Whale.webp' },
     ],
   },
   bugsBlooms: {
@@ -93,10 +97,10 @@ export const CATEGORIES = {
     accent: '#84cc16', // lime
     accentTo: '#4d7c0f',
     items: [
-      { name: 'Monarch Butterfly', url: '/images/bugs-blooms/monarch-butterfly.jpg' },
-      { name: 'Honeybee', url: '/images/bugs-blooms/honeybee.jpg' },
-      { name: 'Ladybug', url: '/images/bugs-blooms/ladybug.jpg' },
-      { name: 'Sunflower', url: '/images/bugs-blooms/sunflower.jpg' },
+      { name: 'Butterfly', url: '/images/bugs&blooms/Butterfly.webp' },
+      { name: 'Honeybee', url: '/images/bugs&blooms/HoneyBee.webp' },
+      { name: 'Ladybug', url: '/images/bugs&blooms/LadyBug.webp' },
+      { name: 'Sunflower', url: '/images/bugs&blooms/sunflower.jpg' },
     ],
   },
   naturalWonders: {
