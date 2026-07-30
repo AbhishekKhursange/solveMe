@@ -77,6 +77,18 @@ export default function App() {
     [categoryKey, gridSize]
   );
 
+  // Unlike startGame, this keeps the same picture — "Restart" should mean
+  // "retry this puzzle", not "give me a different one".
+  const restartPuzzle = useCallback(() => {
+    setBoardSlots(new Array(gridSize * gridSize).fill(null));
+    setPoolPieces(shuffle(buildPieces(gridSize)));
+    setSelectedPiece(null);
+    setMoves(0);
+    setSecondsElapsed(0);
+    setIsWon(false);
+    setShowHint(false);
+  }, [gridSize]);
+
   const placePiece = useCallback(
     (piece, targetIndex) => {
       setMoves((m) => m + 1);
@@ -183,7 +195,7 @@ export default function App() {
             showHint={showHint}
             imageLoaded={imageStatus === 'loaded'}
             onToggleHint={() => setShowHint((h) => !h)}
-            onRestart={() => startGame(categoryKey, gridSize)}
+            onRestart={restartPuzzle}
             onDrop={handleDrop}
             onDragStart={handleDragStart}
             onSelectSlot={handleSelectSlot}
