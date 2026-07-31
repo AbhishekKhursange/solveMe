@@ -206,7 +206,7 @@ export default function App() {
 
       <footer className="border-top border-secondary-subtle py-3 text-center text-muted-soft small mt-4">
         <div className="container d-flex flex-column flex-sm-row justify-content-between gap-2">
-          <span>© 2026 SnapPuzzle</span>
+          <span>© 2026 SolveMe</span>
           <button type="button" className="btn btn-link btn-sm text-muted-soft text-decoration-none" onClick={goHome}>
             Home
           </button>

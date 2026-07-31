@@ -9,8 +9,8 @@ export default defineConfig({
       registerType: 'autoUpdate',
       includeAssets: ['favicon.svg'],
       manifest: {
-        name: 'SnapPuzzle',
-        short_name: 'SnapPuzzle',
+        name: 'SolveMe',
+        short_name: 'SolveMe',
         description: 'Reassemble scrambled images across Wild Kingdom, Global Wonders, Ocean Life, and more.',
         theme_color: '#0b0f19',
         background_color: '#0b0f19',
