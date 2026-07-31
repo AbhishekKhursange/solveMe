@@ -9,6 +9,7 @@ export default function PuzzleBoard({
   onDrop,
   onSelectSlot,
   imageLoaded,
+  isRevealing,
 }) {
   return (
     <div className="board-frame">
@@ -26,6 +27,16 @@ export default function PuzzleBoard({
           style={{ backgroundImage: `url(${currentItem.url})` }}
           aria-hidden="true"
         />
+      )}
+
+      {isRevealing && currentItem && (
+        <div className="reveal-overlay" aria-hidden="true">
+          <div
+            className="reveal-overlay-image"
+            style={{ backgroundImage: `url(${currentItem.url})` }}
+          />
+          <div className="reveal-shine" />
+        </div>
       )}
 
       <div
@@ -47,9 +58,8 @@ export default function PuzzleBoard({
             onKeyDown={(e) => {
               if (e.key === 'Enter' || e.key === ' ') onSelectSlot(index);
             }}
-            className={`board-slot ${piece ? 'filled' : ''} ${
-              !piece && selectedPiece ? 'selectable' : ''
-            }`}
+            className={`board-slot ${piece ? 'filled' : ''} ${!piece && selectedPiece ? 'selectable' : ''
+              }`}
           >
             {piece ? (
               <div

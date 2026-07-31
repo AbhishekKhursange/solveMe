@@ -21,6 +21,7 @@ export default function GameScreen({
   bestScore,
   showHint,
   imageLoaded,
+  isRevealing,
   onToggleHint,
   onRestart,
   onDrop,
@@ -81,6 +82,7 @@ export default function GameScreen({
             onDrop={onDrop}
             onSelectSlot={onSelectSlot}
             imageLoaded={imageLoaded}
+            isRevealing={isRevealing}
           />
         </div>
         <div className="col-lg-5">

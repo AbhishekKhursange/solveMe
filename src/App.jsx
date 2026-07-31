@@ -46,6 +46,7 @@ export default function App() {
   const [moves, setMoves] = useState(0);
   const [secondsElapsed, setSecondsElapsed] = useState(0);
   const [isWon, setIsWon] = useState(false);
+  const [isRevealing, setIsRevealing] = useState(false);
   const [showHint, setShowHint] = useState(false);
 
   const { scores, recordScore, totalSolved } = useBestScores();
@@ -71,6 +72,7 @@ export default function App() {
       setMoves(0);
       setSecondsElapsed(0);
       setIsWon(false);
+      setIsRevealing(false);
       setShowHint(false);
       setScreen('game');
     },
@@ -86,6 +88,7 @@ export default function App() {
     setMoves(0);
     setSecondsElapsed(0);
     setIsWon(false);
+    setIsRevealing(false); 
     setShowHint(false);
   }, [gridSize]);
 
@@ -111,10 +114,12 @@ export default function App() {
 
         const isComplete = updated.every(Boolean);
         if (isComplete) {
+          setIsRevealing(true);
           setTimeout(() => {
             setIsWon(true);
+            setIsRevealing(false); 
             playSound('win', muted);
-          }, 250);
+          }, 2500);
         }
         return updated;
       });
@@ -194,6 +199,7 @@ export default function App() {
             bestScore={bestScore}
             showHint={showHint}
             imageLoaded={imageStatus === 'loaded'}
+            isRevealing={isRevealing}
             onToggleHint={() => setShowHint((h) => !h)}
             onRestart={restartPuzzle}
             onDrop={handleDrop}
