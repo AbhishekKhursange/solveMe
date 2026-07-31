@@ -86,7 +86,7 @@ export const CATEGORIES = {
       { name: 'Sea Turtle', url: '/images/ocean-life/Turtle.webp' },
       { name: 'Clownfish', url: '/images/ocean-life/clownfish.jpg' },
       { name: 'Coral Reef', url: '/images/ocean-life/coral-reef.jpg' },
-      { name: 'Coral Reef', url: '/images/ocean-life/Whale.webp' },
+      { name: 'Whale', url: '/images/ocean-life/Whale.webp' },
     ],
   },
   bugsBlooms: {

@@ -19,9 +19,10 @@ export default function PiecePool({
 
       <div className="pool-tray">
         {poolPieces.length === 0 ? (
-          <div className="text-center py-5">
-            <i className="bi bi-trophy-fill fs-2 text-warning mb-2 d-block" />
-            <p className="fw-bold small mb-0">Fantastic matching!</p>
+          <div className="pool-success">
+            <div className="pool-success-glow" />
+            <i className="bi bi-trophy-fill pool-success-trophy" />
+            <p className="fw-bold mb-1 pool-success-title">Fantastic matching!</p>
             <p className="text-muted-soft small mb-0">Every slot is filled correctly.</p>
           </div>
         ) : (
