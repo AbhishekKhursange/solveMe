@@ -153,6 +153,23 @@ export const CATEGORIES = {
       { name: 'Swans', url: '/images/birds/Swans.webp' },
     ],
   },
+  domesticKingdom: {
+    key: 'domesticKingdom',
+    title: 'Domestic Kingdom',
+    description: 'Beloved pets from around the home.',
+    icon: 'bi-heart-fill',
+    accent: '#ef4444', // red
+    accentTo: '#b91c1c',
+    items: [
+      { name: 'Puppy', url: '/images/domestic-kingdom/Puppy.webp' },
+      { name: 'Kitten', url: '/images/domestic-kingdom/Kitten.webp' },
+      { name: 'Goat', url: '/images/domestic-kingdom/Goat.webp' },
+      { name: 'Sheep', url: '/images/domestic-kingdom/Sheep.webp' },
+      { name: 'Horse', url: '/images/domestic-kingdom/Horse.webp' },
+      { name: 'Cow', url: '/images/domestic-kingdom/Cow.webp' },
+      { name: 'Ox', url: '/images/domestic-kingdom/Ox.webp' },
+    ],
+  },
 };
 
 export const CATEGORY_LIST = Object.values(CATEGORIES);
