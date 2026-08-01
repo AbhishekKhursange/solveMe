@@ -21,8 +21,8 @@ export const CATEGORIES = {
     items: [
       { name: 'Lion', url: '/images/wild-kingdom/Lion.webp' },
       { name: 'Elephant', url: '/images/wild-kingdom/Elephant.webp' },
-      { name: 'Giant Panda', url: 'https://images.unsplash.com/photo-1564349683136-77e08dba1ef9?w=800&auto=format&fit=crop' },
-      { name: 'Red Fox', url: 'https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?w=800&auto=format&fit=crop' },
+      { name: 'Giant Panda', url: '/images/wild-kingdom/GiantPanda.webp' },
+      { name: 'Red Fox', url: '/images/wild-kingdom/RedFox.webp' },
       { name: 'Tiger', url: '/images/wild-kingdom/Tiger.webp' },
       { name: 'Kangaroo', url: '/images/wild-kingdom/Kangaroo.webp' },
     ],
@@ -35,10 +35,16 @@ export const CATEGORIES = {
     accent: '#6366f1', // indigo
     accentTo: '#9333ea',
     items: [
-      { name: 'Eiffel Tower', url: 'https://images.unsplash.com/photo-1511739001486-6bfe10ce785f?w=800&auto=format&fit=crop' },
-      { name: 'Taj Mahal', url: 'https://images.unsplash.com/photo-1564507592333-c60657eea523?w=800&auto=format&fit=crop' },
-      { name: 'Colosseum', url: 'https://images.unsplash.com/photo-1552832230-c0197dd311b5?w=800&auto=format&fit=crop' },
-      { name: 'Mount Fuji', url: 'https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=800&auto=format&fit=crop' },
+      { name: 'Chichén Itzá', url: '/images/global-wonders/ChichenItza.webp' },
+      { name: 'Taj Mahal', url: '/images/global-wonders/TajMahal.webp' },
+      { name: 'Colosseum', url: '/images/global-wonders/Colosseum.webp' },
+      { name: 'Christ the Redeemer', url: '/images/global-wonders/ChristTheRedeemer.webp' },
+      { name: 'Machu Picchu', url: '/images/global-wonders/MachuPicchu.webp' },
+      { name: 'Petra', url: '/images/global-wonders/Petra.webp' },
+      { name: 'Eiffel Tower', url: '/images/global-wonders/EiffelTower.webp' },
+      { name: 'Hanging Gardens of Babylon', url: '/images/global-wonders/HangingGardensOfBabylon.webp' },
+      { name: 'Light House Of Alexandria', url: '/images/global-wonders/LightHouseOfAlexandria.webp' },
+      { name: 'Pyramid of Giza', url: '/images/global-wonders/Pyramid.webp' },
     ],
   },
   fruitsGreens: {
@@ -49,11 +55,14 @@ export const CATEGORIES = {
     accent: '#10b981', // emerald
     accentTo: '#0d9488',
     items: [
-      { name: 'Fresh Strawberries', url: 'https://images.unsplash.com/photo-1464965911861-746a04b4bca6?w=800&auto=format&fit=crop' },
-      { name: 'Crisp Apples', url: 'https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6?w=800&auto=format&fit=crop' },
-      { name: 'Juicy Oranges', url: 'https://images.unsplash.com/photo-1611080626919-7cf5a9dbab5b?w=800&auto=format&fit=crop' },
-      { name: 'Garden Avocado', url: 'https://images.unsplash.com/photo-1523049673857-eb18f1d7b578?w=800&auto=format&fit=crop' },
-      { name: 'Sunflower', url: '/images/fruits-greens/Sunflower.webp' },
+      { name: 'Fresh Strawberries', url: '/images/fruits-greens/Strawberries.webp' },
+      { name: 'Apples', url: '/images/fruits-greens/Apples.webp' },
+      { name: 'Juicy Oranges', url: '/images/fruits-greens/Oranges.webp' },
+      { name: 'Garden Avocado', url: '/images/fruits-greens/Avocado.webp' },
+      { name: 'Grapes', url: '/images/fruits-greens/Grapes.webp' },
+      { name: 'Mangoes', url: '/images/fruits-greens/Mangoes.webp' },
+      { name: 'Pumpkin', url: '/images/fruits-greens/Pumpkin.webp' },
+      { name: 'Broccoli', url: '/images/fruits-greens/Broccoli.webp' },
     ],
   },
   countries: {
@@ -67,11 +76,14 @@ export const CATEGORIES = {
     // no API key, no rate limiting for this scale, safe for production.
     items: [
       { name: 'India', url: '/images/countries/India.webp' },
-      { name: 'United States', url: 'https://flagcdn.com/w640/us.png' },
+      { name: 'United States', url: '/images/countries/UnitedStates.webp' },
       { name: 'Japan', url: '/images/countries/Japan.webp' },
       { name: 'Brazil', url: '/images/countries/Brazil.webp' },
       { name: 'France', url: '/images/countries/France.webp' },
       { name: 'Australia', url: '/images/countries/Australia.webp' },
+      { name: 'Germany', url: '/images/countries/Germany.webp' },
+      { name: 'Russia', url: '/images/countries/Russia.webp' },
+      { name: 'United Kingdom', url: '/images/countries/UnitedKingdom.webp' },
     ],
   },
   oceanLife: {
@@ -84,9 +96,13 @@ export const CATEGORIES = {
     items: [
       { name: 'Dolphins', url: '/images/ocean-life/Dolphin.webp' },
       { name: 'Sea Turtle', url: '/images/ocean-life/Turtle.webp' },
-      { name: 'Clownfish', url: '/images/ocean-life/clownfish.jpg' },
-      { name: 'Coral Reef', url: '/images/ocean-life/coral-reef.jpg' },
+      { name: 'Clownfish', url: '/images/ocean-life/Clownfish.webp' },
+      { name: 'Coral Reef', url: '/images/ocean-life/CoralReef.webp' },
       { name: 'Whale', url: '/images/ocean-life/Whale.webp' },
+      { name: 'Beluga Whales', url: '/images/ocean-life/BelugaWhales.webp' },
+      { name: 'Goldfish', url: '/images/ocean-life/Goldfish.webp' },
+      { name: 'Jellyfish', url: '/images/ocean-life/Jellyfish.webp' },
+      { name: 'Octopus', url: '/images/ocean-life/Octopus.webp' },
     ],
   },
   bugsBlooms: {
@@ -100,7 +116,12 @@ export const CATEGORIES = {
       { name: 'Butterfly', url: '/images/bugs&blooms/Butterfly.webp' },
       { name: 'Honeybee', url: '/images/bugs&blooms/HoneyBee.webp' },
       { name: 'Ladybug', url: '/images/bugs&blooms/LadyBug.webp' },
-      { name: 'Sunflower', url: '/images/bugs&blooms/sunflower.jpg' },
+      { name: 'Sunflower', url: '/images/bugs&blooms/Sunflower.webp' },
+      { name: 'Bittle', url: '/images/bugs&blooms/Bittle.webp' },
+      { name: 'Hibiscus', url: '/images/bugs&blooms/Hibiscus.webp' },
+      { name: 'Lily', url: '/images/bugs&blooms/Lily.webp' },
+      { name: 'Lotus', url: '/images/bugs&blooms/Lotus.webp' },
+      { name: 'Roses', url: '/images/bugs&blooms/Roses.webp' },
     ],
   },
   naturalWonders: {
@@ -111,10 +132,25 @@ export const CATEGORIES = {
     accent: '#f97316', // orange
     accentTo: '#b45309',
     items: [
-      { name: 'Grand Canyon', url: '/images/natural-wonders/grand-canyon.jpg' },
-      { name: 'Niagara Falls', url: '/images/natural-wonders/niagara-falls.jpg' },
-      { name: 'Northern Lights', url: '/images/natural-wonders/northern-lights.jpg' },
-      { name: 'Sahara Desert', url: '/images/natural-wonders/sahara-desert.jpg' },
+      { name: 'Grand Canyon', url: '/images/natural-wonders/GrandCanyon.webp' },
+      { name: 'Northern Lights', url: '/images/natural-wonders/NorthernLights.webp' },
+      { name: 'Mount Fuji', url: '/images/natural-wonders/MountFuji.webp' },
+      { name: 'Harbour Of Rio De Janeiro', url: '/images/natural-wonders/HarbourOfRioDeJaneiro.webp' },
+    ],
+  },
+  birds: {
+    key: 'birds',
+    title: 'Birds',
+    description: 'Feathered flyers from around the world.',
+    icon: 'bi-feather2',
+    accent: '#a855f7', // violet
+    accentTo: '#7e22ce',
+    items: [
+      { name: 'Eagle', url: '/images/birds/Eagle.webp' },
+      { name: 'White Owl', url: '/images/birds/WhiteOwl.webp' },
+      { name: 'Peacock', url: '/images/birds/Peacock.webp' },
+      { name: 'Parrot', url: '/images/birds/Parrot.webp' },
+      { name: 'Swans', url: '/images/birds/Swans.webp' },
     ],
   },
 };
