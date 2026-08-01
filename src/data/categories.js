@@ -25,6 +25,11 @@ export const CATEGORIES = {
       { name: 'Red Fox', url: '/images/wild-kingdom/RedFox.webp' },
       { name: 'Tiger', url: '/images/wild-kingdom/Tiger.webp' },
       { name: 'Kangaroo', url: '/images/wild-kingdom/Kangaroo.webp' },
+      { name: 'Cheetah', url: '/images/wild-kingdom/Cheetah.webp' },
+      { name: 'Giraffe', url: '/images/wild-kingdom/Giraffe.webp' },
+      { name: 'Gorilla', url: '/images/wild-kingdom/Gorilla.webp' },
+      { name: 'Hippopotamus', url: '/images/wild-kingdom/Hippopotamus.webp' },
+      { name: 'Zebra', url: '/images/wild-kingdom/Zebra.webp' },
     ],
   },
   globalWonders: {
@@ -177,6 +182,7 @@ export const CATEGORIES = {
       { name: 'Pig', url: '/images/domestic-kingdom/Pig.webp' },
       { name: 'Hens', url: '/images/domestic-kingdom/Hens.webp' },
       { name: 'Donkey', url: '/images/domestic-kingdom/Donkey.webp' },
+      { name: 'Monkey', url: '/images/domestic-kingdom/Monkey.webp' },
     ],
   },
 };
