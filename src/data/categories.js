@@ -151,6 +151,12 @@ export const CATEGORIES = {
       { name: 'Peacock', url: '/images/birds/Peacock.webp' },
       { name: 'Parrot', url: '/images/birds/Parrot.webp' },
       { name: 'Swans', url: '/images/birds/Swans.webp' },
+      { name: 'Hummingbird', url: '/images/birds/Hummingbird.webp' },
+      { name: 'Kingfisher', url: '/images/birds/Kingfisher.webp' },
+      { name: 'Woodpecker', url: '/images/birds/Woodpecker.webp' },
+      { name: 'Sparrow', url: '/images/birds/Sparrow.webp' },
+      { name: 'Pink Flamingo', url: '/images/birds/PinkFlamingo.webp' },
+      { name: 'Peregrine Falcon', url: '/images/birds/PeregrineFalcon.webp' },
     ],
   },
   domesticKingdom: {
@@ -168,6 +174,9 @@ export const CATEGORIES = {
       { name: 'Horse', url: '/images/domestic-kingdom/Horse.webp' },
       { name: 'Cow', url: '/images/domestic-kingdom/Cow.webp' },
       { name: 'Ox', url: '/images/domestic-kingdom/Ox.webp' },
+      { name: 'Pig', url: '/images/domestic-kingdom/Pig.webp' },
+      { name: 'Hens', url: '/images/domestic-kingdom/Hens.webp' },
+      { name: 'Donkey', url: '/images/domestic-kingdom/Donkey.webp' },
     ],
   },
 };
