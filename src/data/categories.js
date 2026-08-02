@@ -133,7 +133,7 @@ export const CATEGORIES = {
     key: 'naturalWonders',
     title: 'Natural Wonders',
     description: 'Scenery shaped by nature, not people.',
-    icon: 'bi-mountain',
+    icon: 'bi-rainbow',
     accent: '#f97316', // orange
     accentTo: '#b45309',
     items: [
@@ -147,7 +147,7 @@ export const CATEGORIES = {
     key: 'birds',
     title: 'Birds',
     description: 'Feathered flyers from around the world.',
-    icon: 'bi-feather2',
+    icon: 'bi-egg-fill',
     accent: '#a855f7', // violet
     accentTo: '#7e22ce',
     items: [
@@ -168,7 +168,7 @@ export const CATEGORIES = {
     key: 'domesticKingdom',
     title: 'Domestic Kingdom',
     description: 'Beloved pets from around the home.',
-    icon: 'bi-heart-fill',
+    icon: 'bi-house-heart-fill',
     accent: '#ef4444', // red
     accentTo: '#b91c1c',
     items: [
